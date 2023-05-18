@@ -175,7 +175,7 @@ rollout vertex_aligner "vertex aligner"
 					if knot_selected.count == 1 then
 					(
 						spn2=i
-						vertex_aligner.bv1=getKnotPoint theshape2 spn2 knot_selected[1]
+						vertex_aligner.bv2=getKnotPoint theshape2 spn2 knot_selected[1]
 						
 					)
 					else if knot_selected.count > 1 then (messagebox "more than one vertex selected")
