@@ -45,7 +45,7 @@ fn set_vertex_coordinates_editable_poly tv_number base_vertex =								--set new
 fn set_vertex_coordinates_edit_poly tv_number base_vertex =									--set new coordinates of target verts in edit_poly 
 (
   t_type=tverts_type
-	a=theshape3.modifiers[t_type].getvertex tv_number                                        --target vert original coordinates
+	a=theshape3.modifiers[t_type].getvertex tv_number                                       --target vert original coordinates
 	if align_mode[1]==true then (a[1]=base_vertex[1]) 
 	if align_mode[2]==true then (a[2]=base_vertex[2])
 	if align_mode[3]==true then (a[3]=base_vertex[3])
@@ -175,7 +175,7 @@ rollout vertex_aligner "vertex aligner"
 					if knot_selected.count == 1 then
 					(
 						spn2=i
-						vertex_aligner.bv1=getKnotPoint theshape2 spn2 knot_selected[1]
+						vertex_aligner.bv2=getKnotPoint theshape2 spn2 knot_selected[1]
 						
 					)
 					else if knot_selected.count > 1 then (messagebox "more than one vertex selected")
